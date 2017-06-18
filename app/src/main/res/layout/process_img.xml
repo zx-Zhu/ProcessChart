@@ -1,0 +1,331 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/processImg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/process1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view1l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="1"/>
+
+            <View
+                android:id="@+id/view1r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="text1"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/process2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view2l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="2"/>
+
+            <View
+                android:id="@+id/view2r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="text2"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/process3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view3l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="3"/>
+
+            <View
+                android:id="@+id/view3r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="text3"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/process4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view4l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="4"/>
+
+            <View
+                android:id="@+id/view4r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="text4"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/process5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view5l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="5"/>
+
+            <View
+                android:id="@+id/view5r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="text5"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/process6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <View
+                android:id="@+id/view6l"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+
+            <com.github.pavlospt.CircleView
+                android:id="@+id/circle6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cv_backgroundColorValue="#00000000"
+                app:cv_fillColor="#00000000"
+                app:cv_strokeColorValue="#00000000"
+                app:cv_subtitleText=""
+                app:cv_titleColor="#fff"
+                app:cv_titleSize="20sp"
+                app:cv_titleText="6"/>
+
+            <View
+                android:id="@+id/view6r"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="2"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="text6"
+            android:textColor="#00000000"/>
+    </LinearLayout>
+</LinearLayout>
+
