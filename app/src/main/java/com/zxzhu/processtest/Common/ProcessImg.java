@@ -19,13 +19,15 @@ import java.util.List;
  * Created by zxzhu on 2017/6/18.
  */
 
+
 public class ProcessImg extends LinearLayout {
     private String TAG = "ProcessImg";
     private CircleView circleView1, circleView2, circleView3, circleView4, circleView5, circleView6;
     private TextView textView1, textView2, textView3, textView4, textView5, textView6;
+    //view代表流程连接线
     private View view1l, view1r, view2l, view2r, view3l, view3r, view4l, view4r, view5l, view5r, view6l, view6r;
     private LinearLayout process1, process2, process3, process4, process5, process6;
-    private List<LinearLayout> layouts = new ArrayList<>();
+    private List<LinearLayout> layouts = new ArrayList<>();//用于控制流程个数的列表
     private List<View> views = new ArrayList<>();
     private List<TextView> texts = new ArrayList<>();
     private List<CircleView> circleViews = new ArrayList<>();
@@ -36,14 +38,12 @@ public class ProcessImg extends LinearLayout {
     public ProcessImg(Context context) {
         super(context);
         this.context = context;
-        Log.d(TAG, "ProcessImg: 调用构造函数");
         initViews();
     }
 
     public ProcessImg(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.context = context;
-        Log.d(TAG, "ProcessImg: 调用构造函数");
         initViews();
     }
 
@@ -130,9 +130,11 @@ public class ProcessImg extends LinearLayout {
     public void setProcess(int total, int process) {
         this.total = total;
         this.process = process;
+        //使流程总数的view显示出来
         for (int i = 0; i < total; i++) {
             layouts.get(i).setVisibility(VISIBLE);
         }
+        //  设置已完成进度的颜色
         for (int i = 0; i < circleViews.size(); i++) {
             if (i < process) {
                 circleViews.get(i).setFillColor(color);
@@ -141,6 +143,7 @@ public class ProcessImg extends LinearLayout {
                 texts.get(i).setTextColor(color);
 
             } else {
+                //未完成设置为灰色
                 circleViews.get(i).setFillColor(Color.parseColor("#CCCCCC"));
                 circleViews.get(i).setBackgroundColor(Color.parseColor("#CCCCCC"));
                 texts.get(i).setTextColor(Color.parseColor("#CCCCCC"));
@@ -148,6 +151,7 @@ public class ProcessImg extends LinearLayout {
                 circleViews.get(i).setStrokeColor(Color.parseColor("#CCCCCC"));
             }
         }
+        //设置流程连接线的颜色
         for (int i = 0; i < views.size(); i++) {
             if (i < process * 2) {
                 views.get(i).setBackgroundColor(color);
@@ -170,6 +174,4 @@ public class ProcessImg extends LinearLayout {
     public void setTitle(int position, String text) {
         texts.get(position - 1).setText(text);
     }
-
-
 }
