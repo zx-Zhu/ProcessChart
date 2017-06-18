@@ -12,7 +12,11 @@
 
 1.导入compile 'com.github.pavlospt:circleview:1.3'依赖包（因为用到了CircleView）
 
-2.直接把下面两个文件一个java一个xml，复制粘贴进项目（代码放在了文章最后，暂时还没弄成开源库，有时间直接做成依赖包倒进去）
+2.直接把这两个文件一个
+[xml](https://github.com/Zhuzzzzzzx/ProcessTest/blob/master/app/src/main/res/layout/process_img.xml)
+一个
+[java](https://github.com/Zhuzzzzzzx/ProcessTest/blob/master/app/src/main/java/com/zxzhu/processtest/Common/ProcessImg.java)
+，复制粘贴进项目（代码放在了文章最后，暂时还没弄成开源库，有时间直接做成依赖包倒进去）
 
 * 在xml中写入ProcessImg控件
 
@@ -33,4 +37,23 @@
 设置各流程的标题，第一个参数为标题对应的流程数（1~total），第二个参数为String格式标题文本
 
 ***
+### 使用实例
+```
+processImg3.setColor(Color.parseColor("#809bff"));
+        processImg3.setProcess(4,2);
+        processImg3.setTitle(1,"标题1");
+        processImg3.setTitle(2,"标题2");
+        processImg3.setTitle(3,"标题3");
+        processImg3.setTitle(4,"标题4");
+        
+```
+```
+<com.zxzhu.processtest.Common.ProcessImg
+        android:id="@+id/p1"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+    </com.zxzhu.processtest.Common.ProcessImg>
+```
