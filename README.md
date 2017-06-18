@@ -40,11 +40,11 @@
 ### 使用实例
 ```
 processImg3.setColor(Color.parseColor("#809bff"));
-        processImg3.setProcess(4,2);
-        processImg3.setTitle(1,"标题1");
-        processImg3.setTitle(2,"标题2");
-        processImg3.setTitle(3,"标题3");
-        processImg3.setTitle(4,"标题4");
+processImg3.setProcess(4,2);
+processImg3.setTitle(1,"标题1");
+processImg3.setTitle(2,"标题2");
+processImg3.setTitle(3,"标题3");
+processImg3.setTitle(4,"标题4");
         
 ```
 ```
