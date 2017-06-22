@@ -3,6 +3,7 @@ package com.zxzhu.processtest;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.zxzhu.processtest.Common.ProcessImg;
 
@@ -30,6 +31,24 @@ public class MainActivity extends AppCompatActivity {
         processImg1.setTitle(1,"title1");
         processImg1.setTitle(2,"title2");
         processImg1.setTitle(3,"title3");
+        processImg1.setClick(1, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第1项", Toast.LENGTH_SHORT).show();
+            }
+        });
+        processImg1.setClick(2, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第2项", Toast.LENGTH_SHORT).show();
+            }
+        });
+        processImg1.setClick(3, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第3项", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void setProcessImg2(){
@@ -50,5 +69,6 @@ public class MainActivity extends AppCompatActivity {
         processImg3.setTitle(2,"标题2");
         processImg3.setTitle(3,"标题3");
         processImg3.setTitle(4,"标题4");
+
     }
 }

@@ -21,6 +21,9 @@ import java.util.List;
 
 
 public class ProcessImg extends LinearLayout {
+    public interface Click {
+        void click();
+    }
     private String TAG = "ProcessImg";
     private CircleView circleView1, circleView2, circleView3, circleView4, circleView5, circleView6;
     private TextView textView1, textView2, textView3, textView4, textView5, textView6;
@@ -173,5 +176,20 @@ public class ProcessImg extends LinearLayout {
      */
     public void setTitle(int position, String text) {
         texts.get(position - 1).setText(text);
+    }
+
+    /**
+     * 设置个流程的点击事件
+     *
+     * @param i
+     * @param click 点击回调
+     */
+    public void setClick(int i, final Click click) {
+        layouts.get(i - 1).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                click.click();
+            }
+        });
     }
 }
