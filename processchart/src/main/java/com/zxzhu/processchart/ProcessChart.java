@@ -1,16 +1,14 @@
-package com.zxzhu.processtest.Common;
+package com.zxzhu.processchart;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.pavlospt.CircleView;
-import com.zxzhu.processtest.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +18,7 @@ import java.util.List;
  */
 
 
-public class ProcessImg extends LinearLayout {
+public class ProcessChart extends LinearLayout {
     public interface Click {
         void click();
     }
@@ -38,13 +36,13 @@ public class ProcessImg extends LinearLayout {
     private int color = Color.parseColor("#E0E0E0");
     private int total = 0, process = 0;
 
-    public ProcessImg(Context context) {
+    public ProcessChart(Context context) {
         super(context);
         this.context = context;
         initViews();
     }
 
-    public ProcessImg(Context context, AttributeSet attributeSet) {
+    public ProcessChart(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.context = context;
         initViews();
