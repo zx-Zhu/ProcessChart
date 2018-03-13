@@ -2,9 +2,9 @@
 
 ### 先上效果图：
 
-![](http://upload-images.jianshu.io/upload_images/3944777-85690cddc154e437.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/3944777-aaba2399d478785c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如图，可实现设置：总流程数、已完进度程数、已完成颜色，各个标题
+如图，可实现设置：总流程数、已完进度程数、已完成颜色、各个流程点击事件、各个标题
 
 ***
 
@@ -36,24 +36,43 @@
 
 设置各流程的标题，第一个参数为标题对应的流程数（1~total），第二个参数为String格式标题文本
 
+**4.对象.setClick( int position , Click click ) **
+设置各流程的点击事件，第一个参数是点击的流程（1~total），第二个参数为点击后的回调方法。
+
 ***
 ### 使用实例
 ```
-processImg3.setColor(Color.parseColor("#809bff"));
-processImg3.setProcess(4,2);
-processImg3.setTitle(1,"标题1");
-processImg3.setTitle(2,"标题2");
-processImg3.setTitle(3,"标题3");
-processImg3.setTitle(4,"标题4");
+        processImg.setColor(Color.parseColor("#FFFF8C56"));
+        processImg.setProcess(3,2);
+        processImg.setTitle(1,"title1");
+        processImg.setTitle(2,"title2");
+        processImg.setTitle(3,"title3");
+        processImg.setClick(1, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第1项", Toast.LENGTH_SHORT).show();
+            }
+        });
+        processImg.setClick(2, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第2项", Toast.LENGTH_SHORT).show();
+            }
+        });
+        processImg.setClick(3, new ProcessImg.Click() {
+            @Override
+            public void click() {
+                Toast.makeText(MainActivity.this, "点击第3项", Toast.LENGTH_SHORT).show();
+            }
+        });
         
 ```
 ```
-<com.zxzhu.processtest.Common.ProcessImg
-        android:id="@+id/p1"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.zxzhu.processtest.Common.ProcessImg>
+        <com.zxzhu.processtest.Common.ProcessImg
+                android:id="@+id/process"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.zxzhu.processtest.Common.ProcessImg>
 ```
